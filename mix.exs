@@ -32,6 +32,7 @@ defmodule StreamChat.MixProject do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
+      {:dotenv, "~> 3.0"},
       {:joken, "~> 2.6"},
       {:phoenix, "~> 1.7.14"},
       {:phoenix_ecto, "~> 4.5"},

@@ -27,7 +27,7 @@ config :stream_chat, StreamChatWeb.Endpoint,
   watchers: []
 
 
-config :joken, default_signer: System.get_env("JWT_SECRET") || "abcdefghijklmno"
+config :joken, default_signer: System.get_env("JWT_SECRET") || ""
 
 # ## SSL Support
 #
