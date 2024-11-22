@@ -1,4 +1,6 @@
 defmodule StreamChatWeb.Auth.AuthController do
+  @moduledoc false
+
   use StreamChatWeb, :controller
 
   alias StreamChat.Auth.Auth

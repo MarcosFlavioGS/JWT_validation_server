@@ -1,4 +1,5 @@
 defmodule StreamChatWeb.Auth.FallbackController do
+  @moduledoc false
 
   use StreamChatWeb, :controller
 
