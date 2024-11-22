@@ -10,11 +10,11 @@ defmodule StreamChat.Auth.Auth do
 	alias StreamChat.Token
 
 	@doc """
-		verify/1 :: {:ok, response} | {:error, reason}
+		validate/1 :: {:ok, response} | {:error, reason}
 
 		Verify and validates a token
 	"""
-  def check %{"token" => token} do
+  def validate %{"token" => token} do
 		Token.verify_and_validate(token)
   end
 

@@ -8,7 +8,7 @@ defmodule StreamChatWeb.Auth.AuthController do
   action_fallback StreamChatWeb.Auth.FallbackController
 
   def verify conn, token do
-    with {:ok, token_response} <- Auth.check(token) do
+    with {:ok, token_response} <- Auth.validate(token) do
 	  conn
 	  |> put_status(:ok)
 	  |> render(:verify, token_response: token_response)
