@@ -1,8 +1,8 @@
 defmodule StreamChat.Auth.Auth do
   @moduledoc """
-		Module responsable for all token functions
+		Module responsable for all token handling functions
 
-		verify/1
+		validate/1
 
 		token/0
 	"""
