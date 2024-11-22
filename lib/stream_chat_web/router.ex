@@ -7,6 +7,8 @@ defmodule StreamChatWeb.Router do
 
   scope "/api", StreamChatWeb do
     pipe_through :api
+
+    post "/auth", Auth.AuthController, :verify
   end
 
   # Enable LiveDashboard and Swoosh mailbox preview in development

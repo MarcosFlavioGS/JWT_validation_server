@@ -1,8 +1,8 @@
 defmodule StreamChat.Auth.Auth do
   @moduledoc false
 
-  def check token do
-	response = StreamChat.Token.verify(token)
+  def check %{"token" => token} do
+		StreamChat.Token.verify_and_validate(token)
   end
 
   def token do
