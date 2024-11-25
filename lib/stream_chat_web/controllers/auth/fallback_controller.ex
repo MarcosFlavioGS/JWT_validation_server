@@ -9,4 +9,11 @@ defmodule StreamChatWeb.Auth.FallbackController do
     |> put_view(json: StreamChatWeb.Auth.ErrorJSON)
     |> render(:error, reason: reason)
   end
+
+  def call(conn, {:message, reason}) do
+    conn
+    |> put_status(:bad_request)
+    |> put_view(json: StreamChatWeb.Auth.ErrorJSON)
+    |> render(:error, reason: reason)
+  end
 end
