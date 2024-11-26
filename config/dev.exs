@@ -26,7 +26,6 @@ config :stream_chat, StreamChatWeb.Endpoint,
   secret_key_base: "JKlBuEiFv7ZZN48THIW31KzevL6TdGAM6flRT+zZlNGmq5ZFNjp/XWVaBxUWyeop",
   watchers: []
 
-
 config :joken, default_signer: System.get_env("JWT_SECRET") || ""
 
 # ## SSL Support

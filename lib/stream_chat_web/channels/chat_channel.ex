@@ -27,7 +27,7 @@ defmodule StreamChatWeb.ChatChannel do
 
   @impl true
   def handle_in("new_msg", %{"content" => content}, socket) do
-  	broadcast!(socket, "new_msg", content)
+    broadcast!(socket, "new_msg", content)
     {:noreply, socket}
   end
 
