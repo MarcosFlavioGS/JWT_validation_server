@@ -2,7 +2,6 @@ defmodule StreamChatWeb.Auth.AuthController do
   @moduledoc false
 
   use StreamChatWeb, :controller
-
   alias StreamChat.Auth.Auth
 
   action_fallback StreamChatWeb.Auth.FallbackController
@@ -12,7 +11,7 @@ defmodule StreamChatWeb.Auth.AuthController do
 	  conn
 	  |> put_status(:ok)
 	  |> render(:verify, token_response: token_response)
-	end
+		end
   end
 
 end
